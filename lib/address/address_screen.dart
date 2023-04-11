@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class AddressScreen extends StatelessWidget {
-  AddressScreen({Key? key}) : super(key: key);
+  const AddressScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class AddAdressScreen extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Colors.blueAccent,
-            title: Text("Address"),
+            title: const Text("Address"),
           ),
           body: SizedBox(
             height: size.height,

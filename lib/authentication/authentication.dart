@@ -1,7 +1,6 @@
 import 'package:e_commerce/authentication/login_screen/login_screen_view.dart';
 import 'package:e_commerce/home_screen/home_screen_view.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 class Authentication extends StatelessWidget {
@@ -12,9 +11,9 @@ class Authentication extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (auth.currentUser != null) {
-      return HomeScreenView();
+      return const HomeScreenView();
     } else {
-      return LoginScreen();
+      return const LoginScreen();
     }
   }
 }
